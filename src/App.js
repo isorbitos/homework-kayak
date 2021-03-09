@@ -4,7 +4,7 @@ import MoviesSearch from './views/moviesSearch';
 function App() {
   return (
     <div className="App">
-      <h1>Labukas</h1>
+      <h1>Movies</h1>
         <MoviesSearch />
     </div>
   );
