@@ -1,26 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import searchSvg from './search.svg'
-import movieSvg from './movie.svg'
+// import movieSvg from './movie.svg'
 import './style.css';
 
-const searchFieldInputStyle = {
-    outline: 'none',
-    border: 'none',
-    fontSize: 14,
-    padding: 30,
-    flex: 1,
-    color: '#5a5a5a',
-    fontWeight: 100,
-    height: 33,
-};
+
 
 const MoviesSearch = () => {
     const url = "https://api.themoviedb.org/3/search/movie?api_key=95d1df440a077090e0f82bd2b943c8c3&query="
     const [searchTerm, setSearchTerm] = useState('')
     const [movieList, setMovieList] = useState([])
-    const [singleMovie, setSingleMovie] = useState('')
-    const [loadingMovieList, setLoadingMovieList] = useState(false)
+    // const [singleMovie, setSingleMovie] = useState('')
+    // const [loadingMovieList, setLoadingMovieList] = useState(false)
     const [showMovieList, setShowMovieList] = useState(false)
 
     const handleMovie = (title) => {
@@ -43,8 +34,8 @@ const MoviesSearch = () => {
 
     return (
         <div>
-            <div class="container grads">
-                <div class="row">
+            <div className="container grads">
+                <div className="row">
                     <div className="col-12">
                         <div id="custom-search-input">
                             <div className="input-group">
@@ -72,7 +63,7 @@ const MoviesSearch = () => {
             </div>
 
             <div className="container web-info">
-                <div class="row">
+                <div className="row">
                     <div className="col-12">
                     <div className="input-group">
                         <div className="body-section">
